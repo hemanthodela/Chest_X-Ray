@@ -1,0 +1,26 @@
+{
+    "dataset": {
+        "root": "chest_xray",
+        "train_samples": 5216,
+        "train_normal": 1341,
+        "train_pneumonia": 3875,
+        "val_samples": 16,
+        "val_normal": 8,
+        "val_pneumonia": 8,
+        "test_samples": 624,
+        "test_normal": 234,
+        "test_pneumonia": 390
+    },
+    "test_metrics": {
+        "accuracy": 0.8285,
+        "precision": 0.7906,
+        "recall_sensitivity": 0.9872,
+        "specificity": 0.5641,
+        "f1_score": 0.878,
+        "roc_auc": 0.9539,
+        "true_positives": 385,
+        "true_negatives": 132,
+        "false_positives": 102,
+        "false_negatives": 5
+    }
+}

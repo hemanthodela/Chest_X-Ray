@@ -1,0 +1,47 @@
+{
+    "model_architecture": "DenseNet121 Feature Extractor + RandomForestClassifier",
+    "classes": [
+        "No Pneumonia",
+        "Pneumonia"
+    ],
+    "label_mapping": {
+        "0": "No Pneumonia",
+        "1": "Pneumonia"
+    },
+    "folder_mapping": {
+        "NORMAL": 0,
+        "PNEUMONIA": 1
+    },
+    "image_size": 224,
+    "feature_dim": 1024,
+    "normalization": {
+        "mean": [
+            0.485,
+            0.456,
+            0.406
+        ],
+        "std": [
+            0.229,
+            0.224,
+            0.225
+        ]
+    },
+    "rf_hyperparameters": {
+        "n_estimators": 150,
+        "class_weight": "balanced",
+        "min_samples_leaf": 2,
+        "random_state": 42
+    },
+    "evaluation_metrics": {
+        "accuracy": 0.8285,
+        "precision": 0.7906,
+        "recall_sensitivity": 0.9872,
+        "specificity": 0.5641,
+        "f1_score": 0.878,
+        "roc_auc": 0.9539,
+        "true_positives": 385,
+        "true_negatives": 132,
+        "false_positives": 102,
+        "false_negatives": 5
+    }
+}
